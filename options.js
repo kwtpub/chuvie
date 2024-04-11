@@ -76,7 +76,7 @@ module.exports = {
             }
         )
     },
-     payMethodOptions : {
+     rulesToMonitor : {
         reply_markup: JSON.stringify(
             {
                 inline_keyboard: [
@@ -124,9 +124,9 @@ module.exports = {
             {
                 inline_keyboard: [
                     [{text:'Изучить предмет/навык', callback_data: '/learnSkill'}],
-                    [{text:'Повторение', callback_data: '/repetition'}],
+                    [{text:'Повторение', callback_data: '/lookAtWork3'}],
                     [{text:'Полезная теория', callback_data: '/usefulTheory'}],
-                    [{text:'Для преподавателей', callback_data: '/forTeachers'}],
+                    [{text:'Для преподавателей', callback_data: '/ForTeachers'}],
                     [{text:'Что-то пошло не так?', callback_data: '/Question'}],
                 ]
             }
@@ -202,6 +202,26 @@ module.exports = {
                     [{text:'Об убеждениях', callback_data: '/secondStepLearnSkillPreparation2'}],
                     [{text:'Про прогресс и откаты', callback_data: '/secondStepLearnSkillPreparation2'}],
 
+                ]
+            }
+        )
+    },
+    rutButton : {
+        reply_markup: JSON.stringify(
+            {
+                inline_keyboard: [
+                    [{text:'Продолжить', callback_data: '/whenPayingForTheBot'}],
+
+                ]
+            }
+        )
+    },
+    payMethodOptions : {
+        reply_markup: JSON.stringify(
+            {
+                inline_keyboard: [
+                    [{text:'Перейти к оплате', callback_data: '/payMethodMsg2'}],
+                    [{text:'Вернуться к вопросам', callback_data: '/nextMessage1'}]
                 ]
             }
         )
